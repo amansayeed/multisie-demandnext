@@ -1,0 +1,149 @@
+/*  ----------------------------------------------------------------------------
+    responsive settings
+*/
+/* responsive portrait tablet */
+/* responsive portrait phone */
+/*  ----------------------------------------------------------------------------
+    module settings
+*/
+/*  ----------------------------------------------------------------------------
+    header_menu settings
+*/
+/* Magazine Demo */
+.td-newsmag-magazine .td-header-style-1 .sf-menu > li > a:hover,
+.td-newsmag-magazine .td-header-style-1 .sf-menu > .sfHover > a,
+.td-newsmag-magazine .td-header-style-1 .sf-menu > .current-menu-item > a,
+.td-newsmag-magazine .td-header-style-1 .sf-menu > .current-menu-ancestor > a,
+.td-newsmag-magazine .td-header-style-1 .sf-menu > .current-category-ancestor > a {
+  background-color: #000;
+  color: #efefef;
+}
+.td-newsmag-magazine .td-header-style-1 .sf-menu li .fa {
+  margin-right: 7px;
+  font-size: 1.2em;
+}
+.td-newsmag-magazine .td-header-style-1 .sf-menu li .fa.fa-home {
+  font-size: 1.5em;
+  position: relative;
+  top: 1px;
+}
+@media (min-width: 768px) {
+  .td-newsmag-magazine .td-header-menu-wrap {
+    margin-top: 10px;
+  }
+}
+.td-newsmag-magazine .tdc-content-wrap,
+.td-newsmag-magazine .td-post-template-default,
+.td-newsmag-magazine .td-category-header .td-container,
+.td-newsmag-magazine .td-category-container {
+  /* responsive on desktop */
+}
+@media (min-width: 768px) {
+  .td-newsmag-magazine .tdc-content-wrap,
+  .td-newsmag-magazine .td-post-template-default,
+  .td-newsmag-magazine .td-category-header .td-container,
+  .td-newsmag-magazine .td-category-container {
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+.td-newsmag-magazine .td-trending-now-display-area {
+  height: 29px;
+}
+.td-newsmag-magazine .td-next-prev-wrap {
+  top: 5px;
+}
+.td-newsmag-magazine .td-trending-now-title {
+  font-size: 13px;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 4px 13px;
+  background-color: #e54c3d;
+}
+.td-newsmag-magazine .block-title > a,
+.td-newsmag-magazine .block-title > span {
+  color: #222;
+  background-color: transparent;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.td-newsmag-magazine .block-title > a:after,
+.td-newsmag-magazine .block-title > span:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 8px 0 0;
+  background-color: #bd5ed1;
+}
+.td-newsmag-magazine .td-pb-span12 .td_block_title {
+  text-align: center;
+}
+.td-newsmag-magazine .td-pb-span12 .td_block_title .block-title {
+  margin: 0 0 20px 0;
+}
+.td-newsmag-magazine .td-footer-container .block-title > a,
+.td-newsmag-magazine .td-footer-container .block-title > span {
+  color: #fff;
+}
+.td-newsmag-magazine .td-module-comments {
+  background-color: #222;
+  border-radius: 3px;
+}
+.td-newsmag-magazine .td-module-comments a:after {
+  border-color: #222 transparent transparent transparent;
+  border-width: 4px 3px 0 3px;
+  right: 0;
+  left: 0;
+  bottom: -4px;
+  margin: auto;
+}
+.td-newsmag-magazine .td_module_mx8 .td-module-comments {
+  display: none;
+}
+.td-newsmag-magazine .td-related-title {
+  font-size: 14px;
+  line-height: 28px;
+}
+@media (max-width: 1023px) {
+  .td-newsmag-magazine .td-related-title {
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
+.td-newsmag-magazine .td-related-left,
+.td-newsmag-magazine .td-related-right {
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  padding: 5px 3px;
+  margin: 0 7px;
+  background-color: transparent;
+  color: #222;
+}
+.td-newsmag-magazine .td-related-left:hover,
+.td-newsmag-magazine .td-related-right:hover {
+  background-color: transparent;
+}
+@media (max-width: 1023px) {
+  .td-newsmag-magazine .td-related-left,
+  .td-newsmag-magazine .td-related-right {
+    padding: 3px 2px;
+    margin: 0 4px;
+  }
+}
+.td-newsmag-magazine .td-cur-simple-item {
+  background-color: transparent;
+  color: #222;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #bd5ed1;
+}
+.td-newsmag-magazine #td-theme-settings .td-skin-buy a {
+  background-color: #bd5ed1;
+}

@@ -1,0 +1,515 @@
+
+/*  ----------------------------------------------------------------------------
+    Mega Menu
+*/
+
+.td-mega-menu {
+  position: static !important;
+
+  .td-mega-grid {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: @td_grid_border_color;
+  }
+
+  .td-mega-grid:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: @td_grid_border_color;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .td-next-prev-wrap {
+    clear: none;
+  }
+
+  .td_block_mega_menu {
+    padding-top: 20px;
+  }
+
+  .td-mega-row {
+    height: 218px;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      height: 170px;
+    }
+  }
+
+  /*
+
+
+  page in mega menu
+
+
+  */
+
+  // remove border
+  .td-pb-row [class*="td-pb-span"] {
+    border-left: 0 !important;
+  }
+  .td_block_wrap {
+    border-left: 0 !important;
+    border-right: 0 !important;
+  }
+
+  // fix hide block pulldown on blocks
+  .td_block_wrap {
+    .td-pulldown-filter-display-option {
+      display: none;
+    }
+  }
+
+  .td-pb-row .wpb_column:before {
+    display: none;
+  }
+
+  // fix ul li
+  .wpb_content_element {
+    clear: both;
+
+    .widgettitle {
+      margin-top: 24px !important;
+      margin-bottom: 19px !important;
+    }
+
+    ul {
+      display: block !important;
+      width: auto !important;
+      position: relative !important;
+      webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+      top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+
+    li {
+      float: none !important;
+      width: auto !important;
+      line-height: 30px !important;
+      padding: 4px 0 4px 0 !important;
+      border-top: 1px dashed @module-dashed-line;
+
+      &:last-child {
+        border-bottom: 1px dashed @module-dashed-line;
+      }
+
+      ul {
+        opacity: 1 !important;
+        margin-top: 4px !important;
+        padding-bottom: 0 !important;
+
+        li:last-child {
+          border-bottom: 0 !important;
+          padding-bottom: 0 !important;
+        }
+      }
+
+      a {
+        background-color: transparent !important;
+        line-height: 30px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        color: #222222 !important;
+
+        i {
+          display: none;
+        }
+
+        &:hover {
+          background-color: transparent !important;
+          color: @td_theme_color !important;
+        }
+      }
+    }
+  }
+
+  /*
+
+  end fix mega menu with page
+
+  */
+}
+
+.td-mega-menu ul {
+  position: absolute !important;
+  width: 1021px !important;
+  height: auto !important;
+  top: 100%;
+  left: 0 !important;
+  display: none;
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    width: 756px !important;
+  }
+
+  .td-pb-border-top {
+    border-top: none;
+    border-left: 1px solid @td_grid_border_color;
+    border-right: 1px solid @td_grid_border_color;
+  }
+
+  // next-prev
+  .td-next-prev-wrap {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -5px;
+    margin: 20px 20px 0 0;
+
+    a {
+      margin-bottom: 14px;
+    }
+  }
+
+}
+
+// fix when the menu have top border 4px
+.td-header-border .sf-menu {
+  li.td-mega-menu ul {
+    top: auto;
+  }
+}
+
+// module mega menu
+.td_mod_mega_menu {
+  .td-module-thumb {
+    margin-bottom: 6px;
+    position: relative;
+  }
+  .entry-title {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 600;
+    margin: 0;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+
+  // fix the image space on load
+  .entry-thumb {
+    /* responsive desktop */
+    @media (min-width: 1024px) {
+      min-height: 135px;
+    }
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      min-height: 95px;
+    }
+  }
+}
+
+// sub-categories
+.td_mega_menu_sub_cats {
+  display: inline-block;
+  float: left;
+  clear: both;
+
+  .block-mega-child-cats {
+    margin: 11px 0 18px 20px;
+  }
+
+  a {
+    border-radius: 3px;
+    display: inline-table;
+    font-size: 11px;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding: 2px 15px;
+    position: relative;
+    vertical-align: middle;
+
+    // removing the transition
+    -o-transition: none;
+    -moz-transition: none;
+    -khtml-transition: none;
+    -webkit-transition: none;
+    -ms-transition: none;
+    transition: none;
+
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 14px;
+      padding: 2px 9px 2px 9px;
+      height: 19px;
+    }
+  }
+}
+
+.td_block_mega_menu {
+  .td_mega_menu_sub_cats {
+    .cur-sub-cat {
+      background-color: @td_theme_color;
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+// fix first item with long title
+.td-no-subcats .td-next-prev-wrap {
+  clear: both;
+}
+
+// custom menu for long lists
+.td-demo-multicolumn-2 {
+  .sub-menu {
+    padding: 11px 0 0;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+
+    li:first-child > a {
+      margin-top: 0;
+    }
+  }
+}
+.td-menu-mob-open-menu {
+  .td-demo-multicolumn-2 {
+    .sub-menu {
+      padding: 0;
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+    }
+
+    .td-demo-menuitem-hide {
+      display: none;
+    }
+  }
+}
+
+// hide a menu item
+.td-demo-menuitem-hide {
+  visibility: hidden;
+}
+
+//fix td composer list menu and wp custom menu widget in page mega menu
+.td-mega-menu-page {
+  .sub-menu {
+    ul {
+      display: inline-block !important;
+      position: initial !important;
+      width: auto !important;
+    }
+  }
+}
+
+.header-search-wrap {
+  @searchDropMenuWidth:341px;
+  @searchButtonWidth:40px;
+
+  /* hack to show the link on all the module */
+  .td_module_mx2 {
+    a:after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      content:'';
+      z-index: 1; // is needed
+    }
+  }
+
+  .header-search {
+    z-index: 2; //3
+  }
+
+  /* search toggle button */
+  #td-header-search-button {
+    display: block;
+    position: relative;
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      display: none;
+    }
+  }
+  #td-header-search-button-mob {
+    display: none;
+    position: relative;
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      display: block;
+      right: 9px;
+    }
+  }
+
+  /* the drop down */
+  .td-drop-down-search {
+    position: absolute;
+    padding: 0;
+    top: 100%;
+    border-radius: 0;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: @td_grid_border_color;
+    z-index: 98; //99999; menu over the search
+    display: none;
+    right: 0;
+    width: @searchDropMenuWidth;
+    background: @td_submenu_bg;
+
+
+    /* responsive portrait phone */
+    @media (max-width: @responsive_p_phone_max) {
+      right: -1px;
+    }
+
+    /* responsive portrait phone */
+    @media (max-width: 400px) {
+      width: 101%;
+    }
+
+
+    /* search form */
+    .btn {
+      position: absolute;
+      border-radius: 0 3px 3px 0;
+      height: 32px;
+      line-height: 17px;
+      padding: 7px 15px 8px;
+      text-shadow: none;
+      vertical-align: top;
+      right: 0;
+
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        line-height: 17px;
+      }
+
+      &:hover {
+        background-color: #222222;
+      }
+    }
+
+    /* triangle top */
+    &:before {
+      position:absolute;
+      top:-6px;
+      right: 24px;
+      display:block;
+      content:'';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5.5px 6px 5.5px;
+      border-color: transparent transparent #fff transparent;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        right: 23px;
+      }
+    }
+
+    #td-header-search {
+      background-color: #ffffff !important;
+      width: 95%;
+      height: 32px;
+      margin: 0;
+      border-right: 0;
+      line-height: 17px;
+
+
+      &:active,
+      &:focus {
+        border-color: #ccc;
+      }
+    }
+
+    .td-aj-search-results {
+      background-color: #fdfdfd;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+      padding: 10px 0 10px 0;
+
+      .td-module-thumb {
+        top: 10px;
+      }
+      .td_module_wrap {
+        .item-details {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .td_mod_aj_search {
+        padding: 10px 21px 0 21px;
+        margin: 1px 0 0 0;
+        min-height: 56px;
+      }
+    }
+
+    .td-search-form {
+      margin: 21px 20px 20px 21px;
+    }
+
+    .result-msg {
+      text-align: center;
+      padding: 4px 0 6px 0;
+      font-family: @font2;
+      font-size: 12px;
+      color: #222222;
+      font-style: italic;
+
+      a {
+        color: #222222;
+        display: block;
+
+        &:hover {
+          color: @td_theme_color;
+        }
+      }
+    }
+
+    .no-result {
+      background-color: #fdfdfd;
+      border-top: 1px solid #ededed;
+      border-bottom: 1px solid #ededed;
+    }
+
+    .meta-info {
+      line-height: 14px;
+      top: 2px;
+    }
+  }
+
+  .td-aj-cur-element {
+    background-color: #f0f0f0;
+  }
+}
+
+/* this class is added by the js */
+.td-drop-down-search-open {
+  display: block !important;
+  z-index: 9999 !important;
+}
+
+// fix search icon when have the menu border
+.td-header-border #td-top-search {
+  margin-top: -20px;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    margin-top: -22px;
+  }
+}

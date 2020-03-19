@@ -1,0 +1,44 @@
+/* -------------------------------------------------------------------
+
+Header style
+
+----------------------------------------------------------------------  */
+
+// text logo
+.td-logo-text {
+  font-size: 75px;
+  line-height: 60px;
+  margin: 0;
+  font-family: serif;
+  color: #222;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.td-tagline-text {
+  letter-spacing: 1.8px;
+  font-size: 11px;
+  color: rgba(34, 34, 34, 0.5);
+  margin: 0;
+  font-family: serif;
+}
+
+/* -------------------------------------------------------------------
+  Style 0
+----------------------------------------------------------------------  */
+.td-header-style-0 {
+  // logo full
+  .td-header-sp-logo {
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+
+    a {
+      height: auto;
+    }
+  }
+}

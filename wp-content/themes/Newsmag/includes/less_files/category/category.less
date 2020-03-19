@@ -1,0 +1,117 @@
+// 9.6 Category
+
+/*  ----------------------------------------------------------------------------
+    General Settings - Category Templates
+*/
+//description
+.td-category-description {
+  font-family: @font1;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 22px;
+  color: #444;
+  border-top: 1px dashed @module-dashed-line;
+  border-bottom: 1px dashed @module-dashed-line;
+  padding: 11px 0 14px 0;
+  margin-bottom: 20px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+// pagination
+.page-nav {
+  margin-top: 26px;
+
+  /* responsive portrait tablet */
+  @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+    margin-top: 22px;
+  }
+}
+
+// hide on category the top border of the grids
+.category {
+  .td-big-grids {
+    border: none;
+  }
+}
+
+// fix category header on page 2,3....
+.td_line_above_cat_big_grid {
+  border-bottom: 1px solid @td_grid_border_color;
+}
+
+
+
+/*  ----------------------------------------------------------------------------
+    Category Template 1
+*/
+.td_category_template_1 {
+  // general container
+  .td-category-header {
+    .td-container {
+      border-bottom-width: 0;
+      z-index: 2;
+    }
+
+    // page title
+    header {
+      display: inline-block;
+    }
+
+    .entry-title {
+      line-height: 10px;
+      margin: 20px 14px 20px 0;
+
+      /* responsive portrait tablet */
+      @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+        margin-bottom: 17px;
+        margin-top: 16px;
+      }
+
+      /* responsive portrait phone */
+      @media (max-width: @responsive_p_phone_max) {
+        margin-bottom: 14px;
+        margin-top: 14px;
+      }
+
+      span {
+        display: inline-block;
+        font-family: @font1;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 2px 14px;
+        color: #fff;
+        background-color: #222;
+        border-radius: 3px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  // hacks for category templates
+  &.td_category_top_posts_style_disable {
+    .td-subcategory-header {
+      border-bottom: 1px solid @td_grid_border_color;
+    }
+  }
+
+  //breadcrumb
+  .entry-crumbs {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin: 0 0 14px 0;
+  }
+
+  //description
+  .td-category-description {
+    /* responsive portrait tablet */
+    @media (max-width: @responsive_p_tablet_max) {
+      padding: 7px 0 10px 0;
+      margin-bottom: 17px;
+    }
+  }
+}

@@ -1,0 +1,147 @@
+// 2.  Mixin
+
+.mx_image_background {
+  background-color: #f2f2f2;
+}
+
+.td-visibility-hidden { //used to hide date from tc
+  visibility: hidden;
+}
+
+
+/*  ----------------------------------------------------------------------------
+    from bootstrap
+*/
+// Clearfix
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Border Radius
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+// Transitions
+.transition(@transition) {
+  -webkit-transition: @transition;
+  transition: @transition;
+}
+
+.transition_important(@transition) {
+  -webkit-transition: @transition !important;
+  transition: @transition !important;
+}
+
+.transition(@transition1, @transition2) {
+  -webkit-transition: @transition1, @transition2;
+  transition: @transition1, @transition2;
+}
+
+.transition(@transition1, @transition2, @transition3) {
+  -webkit-transition: @transition1, @transition2, @transition3;
+  transition: @transition1, @transition2, @transition3;
+}
+
+.transform-origin(@string) {
+  -webkit-transform-origin: @string;
+  transform-origin: @string;
+}
+
+// Opacity
+.opacity(@value) {
+  @ieval: @value*100;
+  opacity: @value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="@ieval")";
+  filter: alpha(opacity=@ieval);
+}
+
+// Drop shadows
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+.box-shadow(@shadow, @shadow) {
+  -webkit-box-shadow: @shadow, @shadow;
+  box-shadow: @shadow, @shadow;
+}
+
+// Box sizing
+.box-sizing(@boxmodel) {
+  -webkit-box-sizing: @boxmodel;
+  box-sizing: @boxmodel;
+}
+
+
+.scale (@factor) {
+  -webkit-transform: scale(@factor);
+  transform: 		 scale(@factor);
+}
+
+.toRGBA( @color, @alpha) {
+  color: rgba(red(@color), green(@color), blue(@color), @alpha)
+}
+
+
+
+
+/*
+usage:
+.td-block-row {
+  .mx-row(td-block-span);
+}
+
+@all_span_selector - is the begining of the span selector
+ */
+.mx-row-and-span(@all_span_selector) {
+  .mx-row();
+
+  [class*="@{all_span_selector}"] {
+    .mx-span();
+  }
+}
+
+//make a single row
+.mx-row() {
+  width: 100%;
+  *zoom: 1;
+
+  &:before,
+  &:after
+  {
+    display: table;
+    content: "";
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+//make all the spans put it in [class*="span_prefix"] selector
+.mx-span() {
+  display: block;
+  min-height: 1px;
+  float: left;
+}
+
+
+.transform(@string){
+  transform: @string;
+  -webkit-transform: @string;
+}
+
+.transform_important(@string){
+  transform: @string !important;
+  -webkit-transform: @string !important;
+}

@@ -1,0 +1,99 @@
+/*
+Theme Name: 	Newsmag
+Theme URI: 		http://tagdiv.com
+Description: 	Premium wordpress template, clean and easy to use.
+Version: 		__td_deploy_version__
+Author: 		tagDiv
+Author URI: 	http://themeforest.net/user/tagDiv/portfolio
+License:
+License URI:
+Text Domain:    Newsmag
+Tags:black, white, one-column, two-columns, fixed-layout
+*/
+
+/*--------------------------------------------------------------
+TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Variables
+2. Mixin
+3. Normalize
+4. Theme Grid
+5. Header
+6. Typography
+7. Modules
+8. Post and Page
+    9.1 Page
+    9.2 Post
+    9.3 Comments
+    9.4 Gutemberg
+    9.5 Galleries
+    9.6 Category
+10. Misc
+11. Footer
+
+
+/*
+
+    ___________________________________________
+   |   __  _ ___  _   _   __  __ __  __   __   |
+   |  |  \| | __|| | | |/' _/|  V  |/  \ / _]  |
+   |  | | ' | _| | 'V' |`._`.| \_/ | /\ | [/\  |
+   |  |_|\__|___|!_/ \_!|___/|_| |_|_||_|\__/  |
+   |___________________________________________|
+
+  ~ tagDiv 2019 ~
+
+  Thanks for using our theme !
+  Our portfolio is here: http://themeforest.net/user/tagDiv/portfolio
+
+*/
+
+
+// speed booster fix
+body {
+  visibility: visible !important;
+}
+
+@import "variables.less";
+@import "mixin.less";
+
+// reset
+@import "normalize.less";
+
+// grid
+@import "grid/grid.less";
+@import "grid/grid_blocks.less";
+@import "grid/grid_responsive.less";
+
+// header
+@import "header/header.less";
+@import "header/header-style.less";
+@import "header/menu-header.less";
+@import "header/menu-mobile.less";
+
+// type
+@import "type.less";
+
+//modules
+@import "pagebuilder/modules/modules.less";
+@import "pagebuilder/modules/module_1.less";
+@import "pagebuilder/modules/module_15.less";
+@import "pagebuilder/modules/blocks.less";
+
+// post and page
+@import "page.less";
+@import "single/post.less";
+@import "single/comments.less";
+@import "single/gutenberg.less";
+@import "single/galleries.less";
+@import "category/category.less";
+
+// misc
+@import "misc/font-icons.less";
+@import "misc/widgets-default.less";
+@import "misc/plugins.less";
+@import "misc/print.less";
+
+// footer
+@import "footer/footer.less";
+@import "style-extra.less";

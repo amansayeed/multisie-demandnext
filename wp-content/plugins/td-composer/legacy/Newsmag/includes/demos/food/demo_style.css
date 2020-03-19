@@ -1,0 +1,348 @@
+/*  ----------------------------------------------------------------------------
+    responsive settings
+*/
+/* responsive portrait tablet */
+/* responsive portrait phone */
+/*  ----------------------------------------------------------------------------
+    module settings
+*/
+/*  ----------------------------------------------------------------------------
+    header_menu settings
+*/
+.mx_image_background {
+  background-color: #f2f2f2;
+}
+.td-visibility-hidden {
+  visibility: hidden;
+}
+/*  ----------------------------------------------------------------------------
+    from bootstrap
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+usage:
+.td-block-row {
+  .mx-row(td-block-span);
+}
+
+@all_span_selector - is the begining of the span selector
+ */
+/* Food demo */
+@media (min-width: 768px) {
+  .td-newsmag-food .td-header-style-10 {
+    margin-bottom: 6px;
+  }
+}
+.td-newsmag-food .td-header-style-10 .sf-menu > li > a:hover,
+.td-newsmag-food .td-header-style-10 .sf-menu > .sfHover > a,
+.td-newsmag-food .td-header-style-10 .sf-menu > .current-menu-item > a,
+.td-newsmag-food .td-header-style-10 .sf-menu > .current-menu-ancestor > a,
+.td-newsmag-food .td-header-style-10 .sf-menu > .current-category-ancestor > a {
+  color: #e24234;
+  background-color: transparent;
+}
+.td-newsmag-food .td-header-style-10 .sf-menu .menu-item > a {
+  letter-spacing: 2.5px;
+}
+.td-newsmag-food .td-header-style-10 .td-header-main-menu {
+  border: none;
+}
+.td-newsmag-food .td-container-border {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+.td-newsmag-food .td-food-header .wpb_text_column p {
+  color: #fff;
+  font-family: 'Montserrat', 'Open Sans', arial, sans-serif;
+  font-style: italic;
+  font-size: 34px;
+  line-height: 41px;
+  text-transform: none;
+  text-align: center;
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .td-newsmag-food .td-food-header .wpb_text_column p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.td-newsmag-food .td-food-header-row .td-next-prev-wrap i {
+  color: #fff;
+}
+.td-newsmag-food .td-food-header-row .td_block_5 .td-next-prev-wrap {
+  top: 0;
+}
+.td-newsmag-food .td-food-header-row .wpb_column {
+  border-left: none;
+}
+.td-newsmag-food .td-food-img-row .td-module-title a {
+  color: #fff;
+}
+.td-newsmag-food .td-food-img-row .td-social-style9 {
+  color: #fff;
+}
+.td-newsmag-food .td-food-img-row .td-social-style9 .td_social_type:last-child,
+.td-newsmag-food .td-food-img-row .td-social-style9 .td_social_type:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.td-newsmag-food .td-food-img-row .td-social-style9 .td_social_type {
+  width: 50%;
+}
+.td-newsmag-food .td-food-img-row .td-social-style9 .td_social_type a {
+  color: #fff;
+}
+.td-newsmag-food .td-food-img-row .td-social-style9 .td_social_type:hover {
+  color: #e24234;
+}
+.td-newsmag-food .td-food-img-row .td_block_pinterest .td-pinterest-header .td-pinterest-user-meta .td-pinterest-user,
+.td-newsmag-food .td-food-img-row .td_block_pinterest .td-pinterest-followers {
+  color: #fff;
+}
+.td-newsmag-food .td-food-img-row .td_block_pinterest .td-pinterest-main-wrap {
+  overflow-y: hidden !important;
+}
+.td-newsmag-food .td-food-img-row .td_block_pinterest .td-pinterest-header {
+  margin-bottom: 0;
+}
+.td-newsmag-food .td-food-img-row .td-next-prev-wrap i {
+  color: #fff;
+}
+.td-newsmag-food .td_module_wrap .td-module-thumb .entry-thumb,
+.td-newsmag-food .td_module_mega_menu .td-module-thumb .entry-thumb,
+.td-newsmag-food .td_module_related_posts .td-module-thumb .entry-thumb {
+  -webkit-transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+}
+.td-newsmag-food .td_module_wrap .td-module-thumb .entry-thumb.td-animation-stack-type0-2,
+.td-newsmag-food .td_module_mega_menu .td-module-thumb .entry-thumb.td-animation-stack-type0-2,
+.td-newsmag-food .td_module_related_posts .td-module-thumb .entry-thumb.td-animation-stack-type0-2 {
+  -webkit-transition: box-shadow 0.3s ease-out, opacity 0.3s cubic-bezier(0.39, 0.76, 0.51, 0.56);
+  transition: box-shadow 0.3s ease-out, opacity 0.3s cubic-bezier(0.39, 0.76, 0.51, 0.56);
+}
+.td-newsmag-food .td_module_wrap .td-module-thumb .entry-thumb.td-animation-stack-type1-2,
+.td-newsmag-food .td_module_mega_menu .td-module-thumb .entry-thumb.td-animation-stack-type1-2,
+.td-newsmag-food .td_module_related_posts .td-module-thumb .entry-thumb.td-animation-stack-type1-2 {
+  -webkit-transition: box-shadow 0.3s ease-out, transform 0.5s ease, opacity 0.3s cubic-bezier(0.39, 0.76, 0.51, 0.56) 0s;
+  transition: box-shadow 0.3s ease-out, transform 0.5s ease, opacity 0.3s cubic-bezier(0.39, 0.76, 0.51, 0.56) 0s;
+}
+.td-newsmag-food .td_module_wrap .td-module-thumb .entry-thumb.td-animation-stack-type2-2,
+.td-newsmag-food .td_module_mega_menu .td-module-thumb .entry-thumb.td-animation-stack-type2-2,
+.td-newsmag-food .td_module_related_posts .td-module-thumb .entry-thumb.td-animation-stack-type2-2 {
+  -webkit-transition: box-shadow 0.3s ease-out, transform 0.4s cubic-bezier(0.13, 0.43, 0.57, 0.88), opacity 0.4s cubic-bezier(0.13, 0.43, 0.57, 0.88);
+  transition: box-shadow 0.3s ease-out, transform 0.4s cubic-bezier(0.13, 0.43, 0.57, 0.88), opacity 0.4s cubic-bezier(0.13, 0.43, 0.57, 0.88);
+}
+.td-newsmag-food .td_module_wrap .td-module-thumb:hover .entry-thumb,
+.td-newsmag-food .td_module_mega_menu .td-module-thumb:hover .entry-thumb,
+.td-newsmag-food .td_module_related_posts .td-module-thumb:hover .entry-thumb {
+  box-shadow: rgba(108, 108, 108, 0.2) 0px 2px 2px, rgba(108, 108, 108, 0.2) 0px 4px 4px, rgba(108, 108, 108, 0.2) 0px 8px 8px, rgba(108, 108, 108, 0.2) 0px 16px 16px, rgba(108, 108, 108, 0.2) 0px 32px 32px, rgba(108, 108, 108, 0.1) 0px 64px 64px;
+}
+.td-newsmag-food .td_module_wrap .td-post-category,
+.td-newsmag-food .td_module_mega_menu .td-post-category,
+.td-newsmag-food .td_module_related_posts .td-post-category {
+  position: relative;
+  background-color: transparent;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e24234;
+}
+.td-newsmag-food .td_module_mega_menu,
+.td-newsmag-food .td_module_mx4,
+.td-newsmag-food .td_module_3,
+.td-newsmag-food .td_module_4,
+.td-newsmag-food .td_module_mega_menu,
+.td-newsmag-food .td_module_related_posts {
+  text-align: center;
+}
+.td-newsmag-food .td_block_wrap .td-next-prev-wrap {
+  position: absolute;
+  top: 20px;
+}
+.td-newsmag-food .td_block_wrap .td-next-prev-wrap i {
+  font-size: 12px;
+  line-height: 26px;
+}
+.td-newsmag-food .block-title a,
+.td-newsmag-food .block-title span {
+  background-color: transparent !important;
+  color: #000;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .td-newsmag-food .block-title a,
+  .td-newsmag-food .block-title span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.td-newsmag-food .td_with_ajax_pagination .block-title {
+  padding-left: 50px;
+}
+.td-newsmag-food .td_module_mega_menu .td-post-category,
+.td-newsmag-food .td_module_mx4 .td-post-category {
+  margin-top: 7px;
+  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+}
+.td-newsmag-food .td_module_mega_menu .td-module-thumb:hover .entry-thumb,
+.td-newsmag-food .td_module_mx4 .td-module-thumb:hover .entry-thumb {
+  box-shadow: rgba(108, 108, 108, 0.2) 0px 2px 2px, rgba(108, 108, 108, 0.2) 0px 4px 4px, rgba(108, 108, 108, 0.2) 0px 8px 8px, rgba(108, 108, 108, 0.2) 0px 16px 16px, rgba(108, 108, 108, 0.1) 0px 32px 32px;
+}
+.td-newsmag-food .td_module_6 .td-post-category {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+}
+.td-newsmag-food .td_module_6 .td-module-thumb:hover .entry-thumb {
+  box-shadow: rgba(108, 108, 108, 0.2) 0px 2px 2px, rgba(108, 108, 108, 0.2) 0px 4px 4px, rgba(108, 108, 108, 0.2) 0px 8px 8px, rgba(108, 108, 108, 0.2) 0px 16px 16px, rgba(108, 108, 108, 0.1) 0px 32px 32px;
+}
+.td-newsmag-food .td_module_3 .td-post-category {
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+.td-newsmag-food .td_module_3 .td-module-thumb:hover .entry-thumb {
+  box-shadow: rgba(108, 108, 108, 0.2) 0px 2px 2px, rgba(108, 108, 108, 0.2) 0px 4px 4px, rgba(108, 108, 108, 0.2) 0px 8px 8px, rgba(108, 108, 108, 0.2) 0px 16px 16px, rgba(108, 108, 108, 0.2) 0px 32px 32px, rgba(108, 108, 108, 0.1) 0px 64px 64px;
+}
+.td-newsmag-food .td_block_mega_menu .td-next-prev-wrap {
+  position: relative;
+  top: 0;
+}
+.td-newsmag-food .td_block_related_posts .td-next-prev-wrap {
+  top: 0;
+}
+.td-newsmag-food .td-footer-instagram-container .td-instagram-user {
+  border-color: inherit !important;
+}
+.td-newsmag-food .td-author-counters span {
+  font-size: 11px;
+}
+.td-newsmag-food.single_template_3 .td-post-header {
+  padding-bottom: 40px;
+}
+.td-newsmag-food.single_template_3 .td-post-header .td-category {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: 36px;
+}
+.td-newsmag-food.single_template_3 .td-post-header .td-category a {
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #e24234;
+}
+.td-newsmag-food.single_template_3 .td-post-header .entry-title {
+  text-align: center;
+  padding: 10px 8%;
+  letter-spacing: .02em;
+  /* responsive portrait tablet */
+}
+@media (max-width: 1023px) {
+  .td-newsmag-food.single_template_3 .td-post-header .entry-title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+.td-newsmag-food.single_template_3 .td-post-header .meta-info {
+  text-align: center;
+}
+.td-newsmag-food.single_template_3 .td-post-sharing-top {
+  margin-bottom: 20px;
+}
+.td-newsmag-food .td-recipe-time {
+  width: 100%;
+  border: 1px solid #ededed;
+  padding: 11px 16px;
+  margin-bottom: 26px;
+}
+.td-newsmag-food .td-recipe-time br {
+  display: none;
+}
+.td-newsmag-food .td-recipe-time .td-recipe-info {
+  float: left;
+  width: 33.3333%;
+  /* responsive portrait tablet */
+}
+@media (max-width: 1023px) {
+  .td-newsmag-food .td-recipe-time .td-recipe-info {
+    width: 100%;
+  }
+}
+.td-newsmag-food .dropcap1 {
+  font-size: 21px;
+  line-height: 68px;
+  background-color: transparent;
+  color: black;
+  padding: 0;
+  border: 1px solid #ededed;
+  width: 70px;
+  height: 70px;
+  /* responsive portrait phone */
+}
+@media (max-width: 1023px) {
+  .td-newsmag-food .dropcap1 {
+    font-size: 18px;
+    line-height: 59px;
+    width: 60px;
+    height: 60px;
+  }
+}
+.td-newsmag-food .td-related-title .td-cur-simple-item {
+  background-color: transparent;
+  color: #e24234;
+}
+.td-newsmag-food .td-related-title .td-related-left,
+.td-newsmag-food .td-related-title .td-related-right {
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+.td-newsmag-food .td-related-title .td-related-left:hover,
+.td-newsmag-food .td-related-title .td-related-right:hover {
+  color: #e24234;
+}
+@media (max-width: 767px) {
+  .td-newsmag-food .td-related-title .td-related-left,
+  .td-newsmag-food .td-related-title .td-related-right {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 1px 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .td-newsmag-food .td-related-title .td-related-left,
+  .td-newsmag-food .td-related-title .td-related-right {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.td-newsmag-food.td_category_template_4 .td-subcategory-header {
+  display: none;
+}
+.td-newsmag-food.td_category_template_4 .td-category-header .td-page-title {
+  text-transform: none;
+}
+@media (max-width: 1023px) {
+  .td-newsmag-food.td_category_template_4 .td-category-header .td-page-title {
+    margin-bottom: 40px;
+  }
+}

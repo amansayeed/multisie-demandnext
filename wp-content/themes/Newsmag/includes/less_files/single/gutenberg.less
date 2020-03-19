@@ -1,0 +1,239 @@
+// 9.4 Gutenberg
+
+/*  ----------------------------------------------------------------------------
+    less for Gutenberg elements
+*/
+//Image-block
+.wp-block-image {
+  figcaption {
+    font-family: @font2;
+    text-align: right;
+    margin: 4px 0px 17px 0px;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 17px;
+    color: #444444;
+    z-index: 1;
+  }
+}
+
+// Gallery - block
+.wp-block-gallery {
+  .blocks-gallery-image,
+  .blocks-gallery-item {
+
+    figcaption {
+      font-family: @font2;
+      font-size: 11px;
+      line-height: 17px;
+    }
+  }
+}
+
+
+// Categories - block
+.wp-block-categories {
+  padding: 0 10px;
+
+  &,
+  ul {
+    list-style-type: none;
+  }
+
+  ul {
+    margin: 5px 0 0;
+    padding-left: 26px;
+  }
+
+  li {
+    margin-left: 0 !important;
+    margin-bottom: 5px!important;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: #000;
+
+    &:hover {
+      text-decoration: none !important;
+      color: @td_theme_color;
+    }
+  }
+
+  .td-widget-no {
+    float: right;
+  }
+}
+
+//Blockquotes block
+.wp-block-quote, .wp-block-pullquote {
+  cite {
+    color: #6c7781;
+    font-size: 13px;
+    margin-top: 1em;
+    position: relative;
+    font-style: normal;
+  }
+}
+
+//Latest Posts
+.wp-block-latest-posts:not(.is-grid) {
+  li {
+    display: block;
+    margin-bottom: 4px !important;
+    margin-left: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #f1f1f1;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      color: #222222;
+
+      &:hover {
+        color: @td_theme_color;
+        text-decoration: none !important;
+
+      }
+    }
+  }
+}
+
+// Archive block
+.wp-block-archives {
+  li {
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
+    margin-left: 0 !important;
+
+    a {
+      color: #222222;
+
+      &:hover {
+        color: @td_theme_color;
+        text-decoration: none !important;
+
+      }
+    }
+  }
+}
+
+// Latest comments - block
+.wp-block-latest-comments {
+  &.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt, &.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta {
+    margin-left: 0;
+  }
+
+  .wp-block-latest-comments__comment {
+    display: flex;
+    margin: 0 0 10px 0 !important;
+    line-height: 21px;
+    padding-bottom: 13px;
+    border-bottom: 1px dashed #f1f1f1;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #222222;
+      font-style: italic;
+      font-size: 11px;
+      font-weight: bold;
+
+      &:hover {
+        color: @td_theme_color;
+        text-decoration: none !important;
+      }
+
+    }
+  }
+}
+
+//Button
+.wp-block-button {
+
+  &:not(.is-style-outline) {
+
+    .wp-block-button__link {
+      transition: background-color 0.1s ease;
+      -webkit-transition: background-color 0.1s ease;
+      padding: 9px 12px;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: 'Open Sans', arial, sans-serif;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #444 !important;
+        text-decoration: none !important;
+      }
+
+      &:not([class*="has-background"]) {
+        background-color: @td_theme_color;
+      }
+    }
+
+  }
+
+  &.is-style-outline {
+
+    .wp-block-button__link {
+      border-width: 2px;
+      border-style: solid;
+      transition: all 0.1s ease;
+      -webkit-transition: all 0.1s ease;
+
+
+      &:not([class*="has-background"]) {
+        background-color: transparent;
+
+        &:hover {
+          background-color: #4db2ec;
+        }
+      }
+      &:not([class*="has-text-color"]) {
+        color: @td_theme_color;
+        border-color: @td_theme_color;
+      }
+
+      &:hover {
+        background-color: #444;
+        color: #fff;
+        text-decoration: none !important;
+      }
+
+    }
+
+  }
+
+}
+
+//Paragraph shortcode - dropcaps
+p.has-drop-cap {
+
+  &:not(:focus):first-letter {
+    font-size: 60px;
+    line-height: 50px;
+    margin: 7px 9px 0 0;
+    padding: 3px 10px;
+    color: inherit;
+  }
+  &:not([class*="has-text-color"]) {
+
+    &:not(:focus):first-letter {
+      //font-size: 79px;
+      //line-height: 69px;
+      //margin: 0 9px 0 0;
+      //padding: 0 13px 0 0;
+      color: #4B4B4B;
+    }
+  }
+}

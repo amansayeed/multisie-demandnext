@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteBase /healthcare/
+RewriteRule ^index\.php$ - [L]
+
+# add a trailing slash to /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+RewriteRule . index.php [L]
+
+# Block access to the root site
+RewriteCond %{HTTP_HOST} ^(localhost)$ [NC]
+# Whitelist directories and files needed by WordPress
+RewriteCond %{REQUEST_FILENAME} !/wp-.* [NC]
+RewriteCond %{REQUEST_URI} !/wp-.* [NC]
+RewriteCond %{THE_REQUEST} !/wp-.* [NC]
+# Set like-to-like redirect URL for anything not whitelisted
+RewriteRule (.*) http://subdomain\.localhost/$1 [R=301,L]
+
+

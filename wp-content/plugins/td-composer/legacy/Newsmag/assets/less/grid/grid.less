@@ -1,0 +1,138 @@
+/*  ----------------------------------------------------------------------------
+    hacks
+*/
+.wpb_raw_code {
+  margin-bottom: 0 !important;
+}
+.wpb_row, .wpb_content_element,
+ul.wpb_thumbnails-fluid > li,
+.last_toggle_el_margin,
+.wpb_button {
+  margin-bottom: 0;
+}
+// Visual Composer VC latest version 4.9
+// @updated by RA 14 july 2016 - if we use !important, the build in design tab from visual composer cannot overwrite
+.vc_col-has-fill>.vc_column-inner,
+.vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner {
+  padding-top: 0;
+}
+
+//  @updated by RA 14 july 2016 - made more generic and added padding-top reset. I've updated the templates that are in the theme
+.vc_row .vc_column-inner  {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+// fix blocks color background z-index over border
+.td-main-sidebar {
+  z-index: 1;
+}
+// ***                                               ***
+// ***    hack to fix borders on tagDiv Composer     ***
+// ***                                               ***
+
+// border on all columns right side
+.tdc-columns {
+  .tdc-column {
+    .wpb_column {
+      position: relative;
+      &:before {
+        .mx-magic-border();
+        right: -1px;
+      }
+    }
+
+    &:last-child .wpb_column:before {
+      display: none;
+    }
+  }
+}
+
+// Magic border
+.mx-magic-border() {
+  content: '';
+  position: absolute;
+  background-color: @td_grid_border_color;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  //z-index: 1;
+  display: block;
+
+  /* responsive portrait phone */
+  @media (max-width: @responsive_p_phone_max) {
+    display: none;
+  }
+}
+
+// 3 columns - span4 hack
+// first span4
+.tdc-columns .tdc-column:nth-of-type(3) .td-pb-span4 {
+  &:after {
+    .mx-magic-border();
+    left: -341px;
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      left: -253px;
+    }
+  }
+}
+// last span4
+.tdc-columns .tdc-column:nth-last-of-type(3) .td-pb-span4 {
+  &:after {
+    .mx-magic-border();
+    right: -341px;
+    /* responsive portrait tablet */
+    @media (min-width: @responsive_p_tablet_min) and (max-width: @responsive_p_tablet_max) {
+      right: -253px;
+    }
+  }
+}
+
+// hide borders when you have a background on a row
+.tdc-element-style {
+  .vc_column,
+  .vc_column_inner,
+  .td-pb-border-top,
+  .td-pb-row {
+    border-color: transparent !important;
+  }
+
+  .vc_column:before,
+  .vc_column:after,
+  .vc_column_inner:before,
+  .vc_column_inner:after {
+    background-color: transparent !important;
+  }
+}
+
+/*  ----------------------------------------------------------------------------
+    visual editor live
+*/
+/* body.view-mode - in live editor with guides off, body.compose-mode in live editor with guides on */
+body.compose-mode, body.view-mode {
+  [class*="vc_span"] {
+    padding: 0 !important;
+  }
+}
+
+
+/* row edit controlls in live edit mode */
+body.compose-mode .controls-out-tl {
+  top: 0 !important;
+}
+
+body.compose-mode .controls-bc {
+  z-index: 99999;
+}
+body.compose-mode .control-btn-append {
+  top: 0 !important;
+
+}
